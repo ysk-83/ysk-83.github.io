@@ -1,0 +1,9 @@
+// стили для картинки которая преобразуется в background.Здесь-стили для фона
+.ibg {  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img {
+        display: none;
+    }
+}

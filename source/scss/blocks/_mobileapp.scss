@@ -1,0 +1,127 @@
+.mobileapp {
+    padding: 46px 0 61px 0;
+    background: url('../source/img/mobile_bg.jpg') center center/cover no-repeat;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 991.98px) {
+            justify-content: center;
+        }
+    }
+    &__col {
+        flex: 0 0 auto;
+        // flex: 0 0 33.333%;
+        // min-width: 320px;
+        margin-bottom: 19px;
+        padding: 0 16px;
+        @media (max-width: 1199.98px) {
+            padding: 0 6px;
+        }
+        @media (max-width: 991.98px) {
+            
+        }
+        @media (max-width: 767.98px) {
+            
+        }
+        @media (max-width: 575.98px) {
+            
+        }
+    }
+    &__item {
+    }
+}
+
+.mobileapp-body {
+    text-align: center;
+    &__label {
+        margin-bottom: 32px;
+        @media (max-width: 575.98px) {
+            margin-bottom: 14px;
+        }
+    }
+    &__title { 
+        margin-bottom: 18px;
+    }
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+}
+
+.item-mobile {
+    width: 320px;
+    height: 280px;
+    padding:  89px 15px 34px;
+    position: relative;
+    
+    &__1 {
+        background: url('../source/img/card01.jpg') center/cover no-repeat;
+    }
+    &__2 {
+        background: url('../source/img/card02.jpg') center/cover no-repeat;
+    }
+    &__3 {
+        background: url('../source/img/card03.jpg') center/cover no-repeat;
+    }
+    &__4 {
+        background: url('../source/img/card04.jpg') center/cover no-repeat;
+    }
+    &__5 {
+        background: url('../source/img/card05.jpg') center/cover no-repeat;
+    }
+    &__6 {
+        background: url('../source/img/card06.jpg') center/cover no-repeat;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (max-width: 575.98px) {
+            font-size: 18px;
+        }
+    }
+    &__plus {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 29px;
+        height: 29px;
+        background: #000000;
+        border-radius: 50%;
+        &:before { //плюсики создаем псевдоэлементами.их можно вставить и картинками,но не целесообразо
+            content: '';
+            width: 14px;    
+            height: 2px;
+            background-color: #1EACC7;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 2px;    
+            height: 14px;
+            left: 50%;
+            background-color: #1EACC7;
+            transform: translateX(-50%);
+        }
+    }
+    @media (max-width: 1199.98px) {
+		width: 300px;
+	}
+    @media (max-width: 991.98px) {
+		
+	}
+	@media (max-width: 767.98px) {
+		
+	}
+	@media (max-width: 575.98px) {
+		width: 290px;
+	}
+}

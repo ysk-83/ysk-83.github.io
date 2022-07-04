@@ -1,0 +1,80 @@
+.terms {
+      padding: 66px 0 26px 0;
+      @media (max-width: 767.98px) {
+            padding: 40px 0 13px 0;
+      }
+}
+
+.terms-body {
+      text-align: center;
+      &__label {
+            margin-bottom: 27px;
+      }
+      &__title {
+            margin-bottom: 37px;
+      }
+      &__row {
+            display: flex;
+            flex-wrap: wrap;
+      }
+      &__col {
+            flex: 0 0 50%;
+            margin-bottom: 61px;
+            @media (max-width: 767.98px) {
+                  margin-bottom: 30px;
+            }
+            @media (max-width: 575.98px) {
+                  flex: 0 0 100%;
+            }
+      }
+      &__item {
+      }
+}
+
+.item-terms {
+      text-align: left;
+      &__title {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+            color: #1ca8c3;
+            @media (max-width: 575.98px) {
+                  font-size: 16px;
+            }
+      }
+      &__list {
+            padding: 20px 40px;
+            li {
+                  margin-bottom: 10px;
+                  position: relative;
+                  font-weight: 300;
+                  font-size: 17px;
+                  line-height: 24px;
+                  color: #222222;
+                  &:before {
+                        content: "";
+                        position: absolute;
+                        top: 2px;
+                        left: -32px;
+                        display: block;
+                        width: 21px;
+                        height: 21px;
+                        background: url("../source/img/icons/check_blue.png") left no-repeat;
+                  }
+                  @media (max-width: 575.98px) {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        line-height: 16px;
+                  }
+            }
+            @media (max-width: 575.98px) {
+                  padding: 6px 32px;
+            }
+      }
+
+      &__resume {
+            font-weight: 300;
+            font-size: 17px;
+            color: #1ca8c3;
+      }
+}

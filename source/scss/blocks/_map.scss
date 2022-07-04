@@ -1,0 +1,46 @@
+.map {
+      position: relative;
+      padding: 46px 0 21px 0;
+      min-height: 716px;
+      background: #080816 url("../source/img/world_bg.jpg") center no-repeat;
+      @media (max-width: 1199.98px) {
+            background-size: cover;
+      }
+      @media (max-width: 767.98px) {
+            min-height: 550px;
+      }
+      @media (max-width: 575.98px) {
+            min-height: 360px;
+            padding: 24px 0 0 0;
+            background-size: cover;
+      }
+}
+
+.map-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      &__col {
+      }
+      &__label {
+            margin-bottom: 22px;
+      }
+      &__title {
+            margin-bottom: 17px;
+      }
+      &__subtitle {
+      }
+      &__link {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 400;
+            font-size: 15px;
+            // line-height: 68px;
+            text-transform: uppercase;
+            color: #1fbad6;
+      }
+}
